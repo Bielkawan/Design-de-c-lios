@@ -14,13 +14,13 @@ document.querySelectorAll(".nav-list").forEach((n) =>
 
 
     
-const intersectObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        console.log(entry)
-        entry.target.classList.toggle("show", entry.isIntersecting)
+    const intersectObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            console.log(entry)
+            entry.target.classList.toggle("show", entry.isIntersecting)
+        })
     })
-})
-
-const elements = document.querySelectorAll(".box")
-
-elements.forEach(el => intersectObserver.observe(el))
+    
+    const elements = document.querySelectorAll(".box")
+    
+    elements.forEach(el => intersectObserver.observe(el))
