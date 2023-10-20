@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 body { 
-    height: 80vh;
+
     background-color: #b791a6ee;
     background-image: url(fundo.jpg);
     background-position: top;
@@ -603,9 +603,12 @@ iframe {
 
     html, body {
         position: relative;
-        height: 100vh;
+        
         overflow-x: hidden;
         scroll-behavior: smooth;
+    }
+    html {
+        height: 100vh;
     }
 
     .titulo {
