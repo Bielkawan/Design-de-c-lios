@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -29,18 +30,22 @@ section {
 section#img1 {
     background-image: url(img1.jpg);
     background-position: center center;
+    background-size: cover;
 } 
 section#img2 {
     background-image: url(img2.jpg);
     background-position: top center;
+    background-size: cover;
 }
 section#img3 {
     background-image: url(img3.jpg);
     background-position: center ;
+    background-size: cover;
 }
 section#img4 {
     background-image: url(img4.jpg);
     background-position: center;
+    background-size: cover;
 }
 .imagem {
     height: 35rem;
@@ -358,7 +363,7 @@ main {
 #sobre p {
     line-height: 27px;
     display: flex;
-    text-align: center;
+    text-align: left;
 }
 .conteudo {
     background-color: #b791a6ee;
@@ -600,7 +605,7 @@ iframe {
         top: 0;
     }
     
-
+    
     html, body {
         position: relative;
         overflow-x: hidden;
@@ -704,11 +709,11 @@ iframe {
     }
 
 
-
+   
     #avaliacoes img {
         border-radius: 20px;
         height: 150px;
-        width: 95%;
+        width: 100%;
     }
     #img-avaliacao {
         display: flex;
@@ -716,6 +721,8 @@ iframe {
         margin: 1.5rem;
         gap: 1rem;
     }
+
+    
     #mapa {
         padding: 0;
         display: flex;
@@ -744,7 +751,6 @@ iframe {
         text-align: center;
         transition: 0.3s ease-in;
         justify-content: space-around;
-        
     }
     #menu.active {
         right: 0;
